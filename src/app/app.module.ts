@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,16 +9,22 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 
+import { CustomMaterialModule } from './material.module'; 
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     ProductsComponent,
-    AdminComponent
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    CustomMaterialModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
