@@ -4,6 +4,7 @@ import {
   MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
   MatToolbarModule, MatMenuModule,MatIconModule, MatProgressSpinnerModule
 } from '@angular/material';
+
 @NgModule({
   imports: [
   CommonModule, 
@@ -30,4 +31,4 @@ import {
    MatProgressSpinnerModule
    ],
 })
-export class CustomMaterialModule { }
+export class MaterialModule { }

@@ -9,7 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { AdminComponent } from './admin/admin.component';
 
-import { CustomMaterialModule } from './material.module'; 
+import { MaterialModule } from './material.module'; 
 import {FormsModule} from '@angular/forms';
 
 @NgModule({
@@ -23,7 +23,7 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CustomMaterialModule,
+    MaterialModule,
     FormsModule,
     AppRoutingModule
   ],
