@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductService } from './product.service';
 import { AdminComponent } from './admin/admin.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MaterialModule } from './material.module'; 
 import {FormsModule} from '@angular/forms';
@@ -26,8 +28,9 @@ import {FormsModule} from '@angular/forms';
     MaterialModule,
     FormsModule,
     AppRoutingModule
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
