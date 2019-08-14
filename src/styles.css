@@ -1,1 +1,8 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html { 
+	background-color: rgb(175, 167, 182); 
+}
+
+
+

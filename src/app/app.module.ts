@@ -10,9 +10,8 @@ import { ProductsComponent } from './products/products.component';
 import { ProductService } from './product.service';
 import { AdminComponent } from './admin/admin.component';
 import { HttpClientModule } from '@angular/common/http';
-
-import { MaterialModule } from './material.module'; 
-import {FormsModule} from '@angular/forms';
+import { MaterialModule } from './material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

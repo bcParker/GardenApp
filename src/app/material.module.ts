@@ -4,6 +4,7 @@ import {
   MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
   MatToolbarModule, MatMenuModule,MatIconModule, MatProgressSpinnerModule
 } from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav'; 
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import {
   MatTableModule,
   MatMenuModule,
   MatIconModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
+  MatSidenavModule,
   ],
   exports: [
   CommonModule,
@@ -28,7 +30,8 @@ import {
    MatTableModule, 
    MatMenuModule,
    MatIconModule,
-   MatProgressSpinnerModule
+   MatProgressSpinnerModule,
+   MatSidenavModule
    ],
 })
 export class MaterialModule { }
