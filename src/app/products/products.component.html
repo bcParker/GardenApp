@@ -5,7 +5,9 @@
 			<mat-card-content>
 				<p>${{product.product_price}}</p>
 			</mat-card-content>
-			<button mat-stroked-button color="warn">Warn</button>
+			<div *ngIf="token">
+		<button mat-stroked-button color="warn">Warn</button>
+	</div>
 		</mat-card>
 		<mat-card *ngIf="i%2!=0" class="example-card odd" >
 			<mat-card-title>{{product.product_name}}</mat-card-title>
@@ -13,7 +15,9 @@
 			<mat-card-content>
 				<p>${{product.product_price}}</p>
 			</mat-card-content>
-			<button mat-stroked-button color="warn">Warn</button>
+			<div *ngIf="token">
+		<button mat-stroked-button color="warn">Warn</button>
+	</div>
 		</mat-card>
 </div>
 
