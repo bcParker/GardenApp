@@ -2,7 +2,7 @@ import {NgModule} from "@angular/core";
 import { CommonModule } from '@angular/common';
 import {
   MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
-  MatToolbarModule, MatMenuModule,MatIconModule, MatProgressSpinnerModule
+  MatToolbarModule, MatMenuModule,MatIconModule, MatProgressSpinnerModule, MatOptionModule, MatSelectModule,
 } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav'; 
 
@@ -18,6 +18,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   MatMenuModule,
   MatIconModule,
   MatProgressSpinnerModule,
+  MatOptionModule, MatSelectModule,
+
+
   MatSidenavModule,
   ],
   exports: [
@@ -31,6 +34,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
    MatMenuModule,
    MatIconModule,
    MatProgressSpinnerModule,
+   MatOptionModule,
+   MatSelectModule,
    MatSidenavModule
    ],
 })
