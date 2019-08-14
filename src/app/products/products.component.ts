@@ -10,12 +10,17 @@ export class ProductsComponent implements OnInit {
 
   public product = [];
 
+  token: string;
+
   constructor(
     private productService: ProductService,
     ) { }
 
   ngOnInit() {
     this.productService.getProducts().subscribe(data => this.product = data);
+    if (sessionStorage.getItem("token")) {
+      this.token=sessionStorage.getItem("token");
+    }
   }
 
 }

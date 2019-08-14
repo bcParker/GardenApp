@@ -1,4 +1,6 @@
-<mat-card *ngFor='let product of product'>
+<mat-card *ngFor="let product of product">
 	<mat-card-title>{{product.product_name}}</mat-card-title>
-	<button mat-stroked-button color="warn">Warn</button>
+	<div *ngIf="token">
+		<button mat-stroked-button color="warn">Warn</button>
+	</div>
 </mat-card>
