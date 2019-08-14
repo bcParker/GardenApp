@@ -27,7 +27,7 @@ import {FormsModule} from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
     HttpClientModule,
   ],
   providers: [ProductService],

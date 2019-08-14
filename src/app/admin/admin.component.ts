@@ -47,6 +47,7 @@ export class AdminComponent {
         this.router.navigate(["products"]);
       })
       .catch(error => console.log(error('error', error)))
+      alert("Invalid credentials");
   }
 
   storeSession({ role }, token) {
