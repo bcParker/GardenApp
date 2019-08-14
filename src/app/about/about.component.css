@@ -1,10 +1,14 @@
+
 h1{
     margin: 0 auto;
     text-align: center;
+    color: #1CAE82;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p{
     max-width: 650px;
     margin: 0 auto;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form{
@@ -13,21 +17,9 @@ form{
 
 }
 
-input, textarea{
-    border: 3px solid grey;
-    width: 100%;
-    box-sizing: border-box;
-
-}
-
 textarea{
     height: 15em;
 }
-
-input:focus, textarea:focus{
-    border-color: rgba(0, 0, 0, 0.767);
-}
-
 .contact-label-1, .contact-label-2{
     width: 50%;
     float: left;
@@ -40,18 +32,12 @@ input:focus, textarea:focus{
 .contact-label-2{
     padding-left: 5px;
 }
-label{
-    display:block;
-    margin-bottom: 20px;
-}
-
-span{
-    display: block;
-
+.msgBox{
+    width: 100%;
 }
 
 [type="submit"]{
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color:rgba(33, 127, 167, 0.753);
     color: white;
     font-size: 18px;
     text-transform: uppercase;
@@ -65,5 +51,6 @@ span{
 }
 
 [type="submit"]:hover{
-    background-color: rgba(0, 0, 0, 0.904);
+    background-color: #217FA7;
 }
+
