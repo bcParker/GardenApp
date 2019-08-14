@@ -21,6 +21,6 @@ export class ProductsComponent implements OnInit {
     if (sessionStorage.getItem("token")) {
       this.token=sessionStorage.getItem("token");
     }
+    console.log(this.product);
   }
-
 }

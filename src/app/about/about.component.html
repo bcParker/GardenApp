@@ -1,3 +1,4 @@
+<br/><br/><br/><br/><br/><br/>
 <h1>Who Are We?</h1>
 <br/><br/>
 <section>
@@ -7,26 +8,32 @@
   trough the whole process.You will receive peace of mind that your project is completed within a set timeframe and budget.Most 
   importantly, you will be 100% satisfied with the final product.
 </p>
+
 </section>
 <br/><br/><br/>
-  <section>
-    <div class="animated pulse"><span><!--h3 get in touch h3 !--></span></div>
-     <form method="POST" action="https://formspree.io/garciai0526@hotmail.com">
-         
-         <div class="contact-info" id="contactDetails">                                         <!--contact-label-1 !-->
-         <label class="contact-label-1"><span>Your Name</span>
-         <input type="text" name="Name" placeholder="John Doe" class="form-control"></label>
-         
-         <label class="contact-label-2"><span>Your E-mail</span>
-         <input type="email" name="_replyTo" placeholder="youremail@email.com" class="form-control"></label>
-         </div>
-         
-         <label><span>Your Message</span>
-         <textarea name="message" placeholder="Your Message Here" class="form-control"></textarea></label>
-         
-         <div class="submit-wrap">
-         <button type="submit" class="btn btn-primary">Submit</button>                                                                                                             
-         </div>
+
+<section>
+   <form method="POST" action="https://formspree.io/garciai0526@hotmail.com">
        
-     </form>
+       <div class="contact-info" id="contactDetails">                                        
+       <mat-form-field class="contact-label-1">
+        <input matInput placeholder="Your Name">
+      </mat-form-field>
+       
+       <mat-form-field class="contact-label-2">
+        <input matInput placeholder="Your E-mail">
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      </mat-form-field>
+       </div>
+
+       <mat-form-field class="msgBox">
+        <textarea matInput placeholder="Your Message"></textarea>
+      </mat-form-field>
+       
+       <div class="submit-wrap">
+       <button type="submit" mat-button>Submit</button>                                                                                                             
+       </div>
+     
+   </form>
 </section>
+

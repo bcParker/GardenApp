@@ -1,6 +1,23 @@
-<mat-card *ngFor="let product of product">
-	<mat-card-title>{{product.product_name}}</mat-card-title>
-	<div *ngIf="token">
+<div *ngFor='let product of product; let i=index'class='column'>
+		<mat-card *ngIf="i%2==0" class="example-card even" >
+			<mat-card-title>{{product.product_name}}</mat-card-title>
+			<mat-card-subtitle>{{product.product_description}}</mat-card-subtitle>
+			<mat-card-content>
+				<p>${{product.product_price}}</p>
+			</mat-card-content>
+			<div *ngIf="token">
 		<button mat-stroked-button color="warn">Warn</button>
 	</div>
-</mat-card>
+		</mat-card>
+		<mat-card *ngIf="i%2!=0" class="example-card odd" >
+			<mat-card-title>{{product.product_name}}</mat-card-title>
+			<mat-card-subtitle>{{product.product_description}}</mat-card-subtitle>
+			<mat-card-content>
+				<p>${{product.product_price}}</p>
+			</mat-card-content>
+			<div *ngIf="token">
+		<button mat-stroked-button color="warn">Warn</button>
+	</div>
+		</mat-card>
+</div>
+

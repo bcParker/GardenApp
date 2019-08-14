@@ -1,3 +1,25 @@
+
 button {
     float: 'center';
+}
+
+.example-card {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.column {
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    /* grid-auto-flow: column; */
+}
+
+.even{
+    grid-column: 1;
+}
+
+.odd{
+    grid-column: 2;
 }
