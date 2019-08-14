@@ -1,0 +1,19 @@
+h1{
+		margin: 0 auto;
+		text-align: center;
+		color: #023F59;
+}
+p{
+		max-width: 650px;
+		margin: 0 auto;
+}
+
+img {
+		display: block;
+		margin: 0 auto;
+}
+
+.example-card {
+	max-width: 400px;
+	margin: 0 auto;
+}
