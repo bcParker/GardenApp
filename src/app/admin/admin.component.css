@@ -8,3 +8,15 @@
 .example-card {
     width: 15em;
 }
+
+h2 {
+    color: darkgreen;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: green;
+}
