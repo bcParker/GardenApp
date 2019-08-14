@@ -9,7 +9,16 @@ button {
 
 .column {
     display: grid;
-    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
+}
+
+.even{
+    grid-column: 1;
+}
+
+.odd{
+    grid-column: 2;
 }
